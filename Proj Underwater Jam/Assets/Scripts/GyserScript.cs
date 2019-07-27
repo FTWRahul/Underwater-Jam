@@ -13,16 +13,17 @@ public class GyserScript : MonoBehaviour
     float startForce;
     [SerializeField]
     float forceAdder;
+    [SerializeField]
+    float colliderHeight;
+
+    BoxCollider boxCollider;
+
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        boxCollider = GetComponent<BoxCollider>();
+        boxCollider.size = new Vector3(2, colliderHeight, 2);
+        boxCollider.center = new Vector3(0, colliderHeight / 2, 0);
     }
 
     private void OnTriggerStay(Collider other)
