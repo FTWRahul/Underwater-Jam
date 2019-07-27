@@ -8,6 +8,7 @@ public class AnimatorEvents : MonoBehaviour
     [SerializeField] MenuButtonController menuButtonController;
     public bool disableOnce;
 
+
     void PlaySound(AudioClip sound)
     {
         if (!disableOnce)
@@ -20,37 +21,8 @@ public class AnimatorEvents : MonoBehaviour
         }
     }
 
-    public void LoadMenu()
-    {
-        //load mainMenu there
-    }
-
     public void ButtonPressed()
     {
-        switch (menuButtonController.index)
-        {
-            case 3: //Quit
-                CloseGame();
-                break;
-            case 2: //credits
-                break;
-            case 1: //settings
-                break;
-            case 0: // play button
-                LoadGame();
-                break;
-            default:
-                break;
-        } 
-    }
-
-    public void LoadGame()
-    {
-       //Load scene
-    }
-
-    public void CloseGame()
-    {
-        Application.Quit();
+        menuButtonController.ButtonPressed();
     }
 }
