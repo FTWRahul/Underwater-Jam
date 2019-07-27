@@ -416,7 +416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b153cbd1065732b4fb92e21df74b2980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 0.2
+  movementSpeed: 2
   rotationSpeed: 5
 --- !u!75 &1804344764
 ConstantForce:
@@ -567,7 +567,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxForce: 20
   forceScale: 1
-  forceAdder: 9.8
+  startForce: 9
+  forceAdder: 9
 --- !u!65 &2055246506
 BoxCollider:
   m_ObjectHideFlags: 0

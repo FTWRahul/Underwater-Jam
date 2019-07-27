@@ -10,6 +10,8 @@ public class GyserScript : MonoBehaviour
     [SerializeField]
     float forceScale;
     [SerializeField]
+    float startForce;
+    [SerializeField]
     float forceAdder;
     // Start is called before the first frame update
     void Start()
@@ -34,6 +36,7 @@ public class GyserScript : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        forceAdder = startForce;
         other.GetComponent<ConstantForce>().force = Vector3.zero;
     }
 }
