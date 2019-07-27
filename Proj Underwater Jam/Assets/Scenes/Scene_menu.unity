@@ -980,6 +980,7 @@ GameObject:
   - component: {fileID: 1379052407}
   - component: {fileID: 1379052406}
   - component: {fileID: 1379052405}
+  - component: {fileID: 1379052411}
   m_Layer: 5
   m_Name: Yes_btn
   m_TagString: Untagged
@@ -1055,7 +1056,7 @@ MonoBehaviour:
   menuButtonController: {fileID: 2044819831129454771}
   anim: {fileID: 0}
   animEvents: {fileID: 0}
-  thisIndex: 1
+  thisIndex: 2
 --- !u!114 &1379052408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1138,6 +1139,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1379052403}
   m_CullTransparentMesh: 0
+--- !u!114 &1379052411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379052403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2044819831129454771}
+          m_MethodName: PointExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1435645676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,7 +1484,24 @@ MonoBehaviour:
   m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2044819831129454771}
+          m_MethodName: PointExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &1797259355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1522,7 +1570,7 @@ MonoBehaviour:
   menuButtonController: {fileID: 2044819831129454771}
   anim: {fileID: 0}
   animEvents: {fileID: 0}
-  thisIndex: 0
+  thisIndex: 1
 --- !u!114 &1797259359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1620,6 +1668,7 @@ GameObject:
   - component: {fileID: 1910535584}
   - component: {fileID: 1910535583}
   - component: {fileID: 1910535582}
+  - component: {fileID: 1910535588}
   m_Layer: 5
   m_Name: No_btn
   m_TagString: Untagged
@@ -1695,7 +1744,7 @@ MonoBehaviour:
   menuButtonController: {fileID: 2044819831129454771}
   anim: {fileID: 0}
   animEvents: {fileID: 0}
-  thisIndex: 0
+  thisIndex: 1
 --- !u!114 &1910535585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1778,6 +1827,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910535580}
   m_CullTransparentMesh: 0
+--- !u!114 &1910535588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910535580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2044819831129454771}
+          m_MethodName: PointExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1921780773
 GameObject:
   m_ObjectHideFlags: 0
@@ -2183,7 +2262,7 @@ MonoBehaviour:
   menuButtonController: {fileID: 2044819831129454771}
   anim: {fileID: 0}
   animEvents: {fileID: 0}
-  thisIndex: 1
+  thisIndex: 2
 --- !u!222 &2044819829554750867
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2241,6 +2320,7 @@ GameObject:
   - component: {fileID: 2044819829554750869}
   - component: {fileID: 2044819829554750868}
   - component: {fileID: 2044819829554750877}
+  - component: {fileID: 2044819829554750878}
   m_Layer: 5
   m_Name: Settings_btn
   m_TagString: Untagged
@@ -2268,6 +2348,36 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &2044819829554750878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044819829554750876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2044819831129454771}
+          m_MethodName: PointExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!224 &2044819829554750879
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2381,7 +2491,7 @@ MonoBehaviour:
   menuButtonController: {fileID: 2044819831129454771}
   anim: {fileID: 0}
   animEvents: {fileID: 0}
-  thisIndex: 2
+  thisIndex: 3
 --- !u!222 &2044819829732163668
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2435,6 +2545,7 @@ GameObject:
   - component: {fileID: 2044819829732163664}
   - component: {fileID: 2044819829732163665}
   - component: {fileID: 2044819829732163677}
+  - component: {fileID: 2044819829732163678}
   m_Layer: 5
   m_Name: Credits_btn
   m_TagString: Untagged
@@ -2462,6 +2573,36 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &2044819829732163678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044819829732163676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2044819831129454771}
+          m_MethodName: PointExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!224 &2044819829732163679
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3356,7 +3497,7 @@ MonoBehaviour:
   menuButtonController: {fileID: 2044819831129454771}
   anim: {fileID: 0}
   animEvents: {fileID: 0}
-  thisIndex: 0
+  thisIndex: 1
 --- !u!114 &2044819830721879310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3406,6 +3547,7 @@ GameObject:
   - component: {fileID: 2044819830721879311}
   - component: {fileID: 2044819830721879310}
   - component: {fileID: 2044819830721879319}
+  - component: {fileID: 2044819830721879320}
   m_Layer: 5
   m_Name: Play_btn
   m_TagString: Untagged
@@ -3433,6 +3575,36 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &2044819830721879320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044819830721879318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2044819831129454771}
+          m_MethodName: PointExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &2044819830769119538
 GameObject:
   m_ObjectHideFlags: 0
@@ -3718,6 +3890,7 @@ GameObject:
   - component: {fileID: 2044819831089958518}
   - component: {fileID: 2044819831089958505}
   - component: {fileID: 2044819831089958516}
+  - component: {fileID: 2044819831089958520}
   m_Layer: 5
   m_Name: Quit_btn
   m_TagString: Untagged
@@ -3861,7 +4034,37 @@ MonoBehaviour:
   menuButtonController: {fileID: 2044819831129454771}
   anim: {fileID: 0}
   animEvents: {fileID: 0}
-  thisIndex: 3
+  thisIndex: 4
+--- !u!114 &2044819831089958520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044819831089958513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2044819831129454771}
+          m_MethodName: PointExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &2044819831129454770
 GameObject:
   m_ObjectHideFlags: 0
@@ -4317,6 +4520,11 @@ PrefabInstance:
       propertyPath: menuButtonController
       value: 
       objectReference: {fileID: 2044819831129454771}
+    - target: {fileID: 8478425499055360981, guid: a20a71dc27bd3564198549e8672ea708,
+        type: 3}
+      propertyPath: thisIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8478425499055360987, guid: a20a71dc27bd3564198549e8672ea708,
         type: 3}
       propertyPath: menuButtonController
@@ -4961,6 +5169,62 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478425499055360990, guid: a20a71dc27bd3564198549e8672ea708,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478425499055360990, guid: a20a71dc27bd3564198549e8672ea708,
+        type: 3}
+      propertyPath: m_Name
+      value: Back_btn
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478425499055360977, guid: a20a71dc27bd3564198549e8672ea708,
+        type: 3}
+      propertyPath: m_Delegates.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478425499055360977, guid: a20a71dc27bd3564198549e8672ea708,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478425499055360977, guid: a20a71dc27bd3564198549e8672ea708,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].eventID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478425499055360977, guid: a20a71dc27bd3564198549e8672ea708,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_TypeName
+      value: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI, Version=1.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478425499055360977, guid: a20a71dc27bd3564198549e8672ea708,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478425499055360977, guid: a20a71dc27bd3564198549e8672ea708,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478425499055360977, guid: a20a71dc27bd3564198549e8672ea708,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2044819831129454771}
+    - target: {fileID: 8478425499055360977, guid: a20a71dc27bd3564198549e8672ea708,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PointExit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478425499055360977, guid: a20a71dc27bd3564198549e8672ea708,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7622839208611917553, guid: a20a71dc27bd3564198549e8672ea708, type: 3}

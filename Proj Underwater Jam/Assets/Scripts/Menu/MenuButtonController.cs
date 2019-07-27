@@ -38,7 +38,7 @@ public class MenuButtonController : MonoBehaviour
                     }
                     else
                     {
-                        index = 0;
+                        index = 1;
                     }
                 }
                 else if(Input.GetAxis("Vertical") > 0)
@@ -67,22 +67,27 @@ public class MenuButtonController : MonoBehaviour
         index = thisIndex;
     }
 
+    public void PointExit()
+    {
+        index = 0;
+    }
+
     public void ButtonPressed()
     {
         if (activeMenuIndex == 0)
         {
             switch (index)
             {
-                case 3: //Quit
+                case 4:
                     OpenQuit();
                     break;
-                case 2: //credits
+                case 3: 
                     OpenCredits();
                     break;
-                case 1: //settings
+                case 2: 
                     OpenSettings();
                     break;
-                case 0: // play button
+                case 1:
                     LoadGame();
                     break;
                 default:
@@ -91,21 +96,29 @@ public class MenuButtonController : MonoBehaviour
         }
         else if(activeMenuIndex == 1)
         {
-            OpenMain();
+            if (index == 1)
+            {
+                OpenMain();
+            }
         }
         else if(activeMenuIndex == 2)
         {
-            OpenMain();
+            if (index == 1)
+            {
+                OpenMain();
+            }
         }
         else if (activeMenuIndex == 3)
         {
             switch (index)
             {
-                case 1:
+                case 2:
                     CloseGame();
                     break;
-                case 0:
+                case 1:
                     OpenMain();
+                    break;
+                default:
                     break;
             }
         }
