@@ -694,8 +694,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "ALL SOUNDS \nVOLUME"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 497d1eb4627483c43b433e793e75e6b9, type: 2}
-  m_sharedMaterial: {fileID: -7096988193798235365, guid: 497d1eb4627483c43b433e793e75e6b9,
+  m_fontAsset: {fileID: 11400000, guid: 10593b6cafa8b434d9c5fee05cfa8ea4, type: 2}
+  m_sharedMaterial: {fileID: -921754560233898932, guid: 10593b6cafa8b434d9c5fee05cfa8ea4,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1259,8 +1259,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "ALL SOUNDS \nVOLUME"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 497d1eb4627483c43b433e793e75e6b9, type: 2}
-  m_sharedMaterial: {fileID: -7096988193798235365, guid: 497d1eb4627483c43b433e793e75e6b9,
+  m_fontAsset: {fileID: 11400000, guid: 10593b6cafa8b434d9c5fee05cfa8ea4, type: 2}
+  m_sharedMaterial: {fileID: -921754560233898932, guid: 10593b6cafa8b434d9c5fee05cfa8ea4,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2311,8 +2311,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: SETTINGS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 497d1eb4627483c43b433e793e75e6b9, type: 2}
-  m_sharedMaterial: {fileID: -7096988193798235365, guid: 497d1eb4627483c43b433e793e75e6b9,
+  m_fontAsset: {fileID: 11400000, guid: 10593b6cafa8b434d9c5fee05cfa8ea4, type: 2}
+  m_sharedMaterial: {fileID: -921754560233898932, guid: 10593b6cafa8b434d9c5fee05cfa8ea4,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2543,8 +2543,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: B A C K
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 497d1eb4627483c43b433e793e75e6b9, type: 2}
-  m_sharedMaterial: {fileID: -7096988193798235365, guid: 497d1eb4627483c43b433e793e75e6b9,
+  m_fontAsset: {fileID: 11400000, guid: 10593b6cafa8b434d9c5fee05cfa8ea4, type: 2}
+  m_sharedMaterial: {fileID: -921754560233898932, guid: 10593b6cafa8b434d9c5fee05cfa8ea4,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2941,8 +2941,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "ALL SOUNDS \nVOLUME"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 497d1eb4627483c43b433e793e75e6b9, type: 2}
-  m_sharedMaterial: {fileID: -7096988193798235365, guid: 497d1eb4627483c43b433e793e75e6b9,
+  m_fontAsset: {fileID: 11400000, guid: 10593b6cafa8b434d9c5fee05cfa8ea4, type: 2}
+  m_sharedMaterial: {fileID: -921754560233898932, guid: 10593b6cafa8b434d9c5fee05cfa8ea4,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
