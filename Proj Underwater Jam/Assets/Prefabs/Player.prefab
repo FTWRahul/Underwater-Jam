@@ -261,6 +261,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rockson
       objectReference: {fileID: 0}
+    - target: {fileID: -1000958392418868757, guid: 9898bfd7423f33e41b643817381e6e85,
+        type: 3}
+      propertyPath: m_Name
+      value: Pupil Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048912742812855933, guid: 9898bfd7423f33e41b643817381e6e85,
+        type: 3}
+      propertyPath: m_Name
+      value: Pupil Left
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9898bfd7423f33e41b643817381e6e85,
         type: 3}
       propertyPath: m_LocalPosition.x
