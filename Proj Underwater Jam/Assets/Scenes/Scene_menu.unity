@@ -378,8 +378,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -200}
-  m_SizeDelta: {x: 525, y: 200}
+  m_AnchoredPosition: {x: 50, y: -235}
+  m_SizeDelta: {x: 525, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &248672718
 MonoBehaviour:
@@ -401,10 +401,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'amanda duarte
+  m_text: 'steven mirasola
 
 
-    steven mirasola'
+    amanda duarte'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 10593b6cafa8b434d9c5fee05cfa8ea4, type: 2}
   m_sharedMaterial: {fileID: -921754560233898932, guid: 10593b6cafa8b434d9c5fee05cfa8ea4,
@@ -433,8 +433,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -564,7 +564,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 36, y: -71}
+  m_AnchoredPosition: {x: 36, y: -47}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &265558442
@@ -587,7 +587,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 1
   m_StartAxis: 0
-  m_CellSize: {x: 525, y: 200}
+  m_CellSize: {x: 525, y: 270}
   m_Spacing: {x: 100, y: 100}
   m_Constraint: 1
   m_ConstraintCount: 3
@@ -1343,8 +1343,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -575, y: 100}
-  m_SizeDelta: {x: 525, y: 200}
+  m_AnchoredPosition: {x: -575, y: 135}
+  m_SizeDelta: {x: 525, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &693220124
 MonoBehaviour:
@@ -1369,10 +1369,7 @@ MonoBehaviour:
   m_text: 'rahul poundarik
 
 
-    evgeniya
-
-
-    danil
+    evgeniya Glazycheva
 
 '
   m_isRightToLeft: 0
@@ -1403,8 +1400,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1420,7 +1417,7 @@ MonoBehaviour:
   m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 26
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1444,12 +1441,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 693220124}
-    characterCount: 33
+    characterCount: 37
     spriteCount: 0
-    spaceCount: 6
+    spaceCount: 5
     wordCount: 4
     linkCount: 0
-    lineCount: 5
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -2125,8 +2122,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 675, y: 100}
-  m_SizeDelta: {x: 525, y: 200}
+  m_AnchoredPosition: {x: 675, y: 135}
+  m_SizeDelta: {x: 525, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1142527478
 MonoBehaviour:
@@ -2180,8 +2177,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3101,7 +3098,7 @@ GameObject:
   - component: {fileID: 1609212374}
   - component: {fileID: 1609212373}
   m_Layer: 5
-  m_Name: AudioSource
+  m_Name: AudioSource_buttonsSFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3116,7 +3113,8 @@ AudioSource:
   m_GameObject: {fileID: 1609212372}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4851971223442707211, guid: 307dfafeb2ae50a43b11fde6ebb3c412,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -4705,8 +4703,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 675, y: -200}
-  m_SizeDelta: {x: 525, y: 200}
+  m_AnchoredPosition: {x: 675, y: -235}
+  m_SizeDelta: {x: 525, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2072314543
 MonoBehaviour:
@@ -4731,7 +4729,7 @@ MonoBehaviour:
   m_text: 'amanda duarte
 
 
-    evgeniya'
+    evgeniya Glazycheva'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 10593b6cafa8b434d9c5fee05cfa8ea4, type: 2}
   m_sharedMaterial: {fileID: -921754560233898932, guid: 10593b6cafa8b434d9c5fee05cfa8ea4,
@@ -4760,8 +4758,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4801,10 +4799,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2072314543}
-    characterCount: 23
+    characterCount: 34
     spriteCount: 0
-    spaceCount: 3
-    wordCount: 3
+    spaceCount: 4
+    wordCount: 4
     linkCount: 0
     lineCount: 3
     pageCount: 1
@@ -4888,8 +4886,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: 100}
-  m_SizeDelta: {x: 525, y: 200}
+  m_AnchoredPosition: {x: 50, y: 135}
+  m_SizeDelta: {x: 525, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2082298971
 MonoBehaviour:
@@ -4943,8 +4941,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5071,8 +5069,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -575, y: -200}
-  m_SizeDelta: {x: 525, y: 200}
+  m_AnchoredPosition: {x: -575, y: -235}
+  m_SizeDelta: {x: 525, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2126577780
 MonoBehaviour:
@@ -5123,8 +5121,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7280,8 +7278,9 @@ GameObject:
   - component: {fileID: 2044819831129454772}
   - component: {fileID: 2044819831129454773}
   - component: {fileID: 2044819831129454771}
+  - component: {fileID: 2044819831129454776}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas_and_BGAudioSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7397,6 +7396,103 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!82 &2044819831129454776
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044819831129454770}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -5949600523859468282, guid: 307dfafeb2ae50a43b11fde6ebb3c412,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &2044819831187370512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8149,6 +8245,11 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 563250959507588181, guid: a20a71dc27bd3564198549e8672ea708,
+        type: 3}
+      propertyPath: m_MinValue
+      value: -75
+      objectReference: {fileID: 0}
     - target: {fileID: 1674203944802130334, guid: a20a71dc27bd3564198549e8672ea708,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
@@ -8179,6 +8280,11 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1674203944802130334, guid: a20a71dc27bd3564198549e8672ea708,
+        type: 3}
+      propertyPath: m_MinValue
+      value: -75
+      objectReference: {fileID: 0}
     - target: {fileID: 8478425499877704621, guid: a20a71dc27bd3564198549e8672ea708,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
@@ -8208,6 +8314,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478425499877704621, guid: a20a71dc27bd3564198549e8672ea708,
+        type: 3}
+      propertyPath: m_MinValue
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 8251302169657765920, guid: a20a71dc27bd3564198549e8672ea708,
         type: 3}
@@ -8378,6 +8489,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198432392718947671, guid: a20a71dc27bd3564198549e8672ea708,
+        type: 3}
+      propertyPath: m_MinValue
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 3425992880296385158, guid: a20a71dc27bd3564198549e8672ea708,
         type: 3}
