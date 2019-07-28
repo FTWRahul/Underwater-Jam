@@ -11,6 +11,12 @@ public class PlayerMove : MonoBehaviour
     float rotationSpeed;
     Rigidbody rb;
 
+    public static bool isGrounded;
+    Vector3 lastPosi;
+    Vector3 newPosi;
+    bool isFalling;
+    int fallCounter;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,13 +36,46 @@ public class PlayerMove : MonoBehaviour
             {
                 //Debug.Log("GroundHit");
                 rotationSpeed = 5f;
+                isGrounded = true;
             }
         }
         else
         {
+            isGrounded = false;
+            isFalling = true;
            //Debug.Log("HitNothing");
             rotationSpeed = .5f;
         }
+        if (isFalling && isGrounded)
+        {
+            CheckFallDistance(lastPosi, transform.position);
+        }
+        if (isGrounded && !isFalling)
+        {
+            lastPosi = transform.position;
+        }
+    }
+
+    public void CheckFallDistance(Vector3 lastPosi, Vector3 newPosi)
+    {
+        float difference = lastPosi.y- newPosi.y;
+        //Debug.Log("LAST POSI" + lastPosi);
+        //Debug.Log("NEW POSI"+newPosi);
+        //Debug.Log(difference);
+        if (difference > 50)
+        {
+            Debug.Log("Huge fall");
+        }
+        else if (difference > 20)
+        {
+            Debug.Log("Medium fall");
+        }
+        fallCounter++;
+        //else if(difference > 10)
+        //{
+        //    Debug.Log("Small fall");
+        //}
+        isFalling = false;
     }
 
     private void MovePlayer()
