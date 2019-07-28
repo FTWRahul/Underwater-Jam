@@ -16,12 +16,16 @@ public class PlayerMove : MonoBehaviour
     Vector3 newPosi;
     bool isFalling;
 
-    int smallFallCounter;
-    int bigFallCounter;
+    int fallCounter;
 
-    List<AudioClip> smallFallClips;
-    List<AudioClip> bigFallClips;
+    [SerializeField]
+    List<AudioClip> fallClips;
     AudioSource audioSource;
+    RaycastHit hit;
+    [SerializeField]
+    GameObject dustPoof;
+    [SerializeField]
+    GameObject dustParticles;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +38,6 @@ public class PlayerMove : MonoBehaviour
     void FixedUpdate()
     {
         MovePlayer();
-        RaycastHit hit;
         //if(Physics.Raycast(transform.position, Vector3.down * 0.2f, out hit ))
         Debug.DrawLine(transform.position, transform.position + new Vector3(0, -1.2f, 0), Color.red);
         if(Physics.Raycast(transform.position, Vector3.down, out hit, 1.2f))
@@ -69,33 +72,30 @@ public class PlayerMove : MonoBehaviour
         //Debug.Log("LAST POSI" + lastPosi);
         //Debug.Log("NEW POSI"+newPosi);
         //Debug.Log(difference);
-        if (difference > 50)
+        if (difference > 10)
         {
             Debug.Log("Huge fall");
-            if(bigFallCounter < bigFallClips.Count)
+            if(fallCounter < fallClips.Count - 1)
             {
-                bigFallCounter++;
+                fallCounter++;
             }
             else
             {
-                bigFallCounter = 0;
+                fallCounter = 0;
             }
-            audioSource.clip = bigFallClips[bigFallCounter];
+            audioSource.clip = fallClips[fallCounter];
+            audioSource.Play();
         }
-        else if (difference > 20)
+
+        if (difference > 10)
         {
-            Debug.Log("Medium fall");
-            if (smallFallCounter < smallFallClips.Count)
-            {
-                smallFallCounter++;
-            }
-            else
-            {
-                smallFallCounter = 0;
-            }
-            audioSource.clip = smallFallClips[smallFallCounter];
+            GameObject dustPoofTMP = Instantiate(dustPoof, transform.position + Vector3.down, Quaternion.Euler(new Vector3(90,0,0)));
+
+            GameObject dustParticleTMP = Instantiate(dustParticles, transform.position, Quaternion.identity);
+
+            Destroy(dustPoofTMP, 3f);
+            Destroy(dustParticleTMP, 6f);
         }
-        audioSource.Play();
         isFalling = false;
     }
 
