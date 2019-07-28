@@ -15,11 +15,18 @@ public class PlayerMove : MonoBehaviour
     Vector3 lastPosi;
     Vector3 newPosi;
     bool isFalling;
-    int fallCounter;
+
+    int smallFallCounter;
+    int bigFallCounter;
+
+    List<AudioClip> smallFallClips;
+    List<AudioClip> bigFallClips;
+    AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
     }
 
@@ -65,16 +72,30 @@ public class PlayerMove : MonoBehaviour
         if (difference > 50)
         {
             Debug.Log("Huge fall");
+            if(bigFallCounter < bigFallClips.Count)
+            {
+                bigFallCounter++;
+            }
+            else
+            {
+                bigFallCounter = 0;
+            }
+            audioSource.clip = bigFallClips[bigFallCounter];
         }
         else if (difference > 20)
         {
             Debug.Log("Medium fall");
+            if (smallFallCounter < smallFallClips.Count)
+            {
+                smallFallCounter++;
+            }
+            else
+            {
+                smallFallCounter = 0;
+            }
+            audioSource.clip = smallFallClips[smallFallCounter];
         }
-        fallCounter++;
-        //else if(difference > 10)
-        //{
-        //    Debug.Log("Small fall");
-        //}
+        audioSource.Play();
         isFalling = false;
     }
 

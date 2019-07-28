@@ -23,6 +23,7 @@ public class GyserScript : MonoBehaviour
 
     [SerializeField]
     ParticleSystem particles;
+    GameObject particleObj;
 
     CameraShake camShake;
 
@@ -31,6 +32,15 @@ public class GyserScript : MonoBehaviour
     {
         camShake = FindObjectOfType<CameraShake>();
         forceAdder = startForce;
+        SetUpParticles();
+        particleObj = transform.GetChild(0).gameObject;
+        //particleObj.SetActive(false);
+        //enabled = false;
+
+    }
+
+    public void SetUpParticles()
+    {
         particles = GetComponentInChildren<ParticleSystem>();
         var main = particles.main;
         main.startLifetime = colliderHeight * 2f;
@@ -61,5 +71,20 @@ public class GyserScript : MonoBehaviour
     {
         forceAdder = startForce;
         other.GetComponent<ConstantForce>().force = Vector3.zero;
+    }
+
+    private void OnBecameInvisible()
+    {
+        //enabled = false;
+       // particleObj.SetActive(false);
+        Debug.Log("Invisible");
+    }
+
+    private void OnBecameVisible()
+    {
+        //enabled = true;
+        //particleObj.SetActive(true);
+        Debug.Log("Visiable");
+
     }
 }
