@@ -7,20 +7,41 @@ public class GyserScript : MonoBehaviour
 
     [SerializeField]
     float maxForce;
-    [SerializeField]
+    [SerializeField][Tooltip("How fast the force reaches with max")]
     float forceScale;
     [SerializeField]
     float startForce;
-    [SerializeField]
     float forceAdder;
+    [SerializeField][Tooltip("Keep it close to the maxForce")]
+    float particleWidthFactor;
+    [SerializeField][Tooltip("Lower Value = faseter bubbles")]
+    float particleSpeedFactor;
     [SerializeField]
     float colliderHeight;
 
     BoxCollider boxCollider;
 
+    [SerializeField]
+    ParticleSystem particles;
+
+    CameraShake camShake;
+
     // Start is called before the first frame update
     void Start()
     {
+        camShake = FindObjectOfType<CameraShake>();
+        forceAdder = startForce;
+        particles = GetComponentInChildren<ParticleSystem>();
+        var main = particles.main;
+        main.startLifetime = colliderHeight * 2f;
+        main.simulationSpeed = maxForce / particleSpeedFactor;
+        main.simulationSpeed = maxForce;
+        var shape = particles.shape;
+        shape.radius = maxForce / particleWidthFactor;
+        var particleCol = particles.collision;
+        particleCol.lifetimeLoss = .8f;
+        //main.gravityModifier. *= maxForce / 2f;
+        //particles.startLifetime = colliderHeight
         boxCollider = GetComponent<BoxCollider>();
         boxCollider.size = new Vector3(2, colliderHeight, 2);
         boxCollider.center = new Vector3(0, colliderHeight / 2, 0);
@@ -32,6 +53,7 @@ public class GyserScript : MonoBehaviour
         {
             forceAdder += forceScale * Time.deltaTime;
         }
+        camShake.Trauma += .8f;
         other.GetComponent<ConstantForce>().force = new Vector3(0, forceAdder, 0);
     }
 
