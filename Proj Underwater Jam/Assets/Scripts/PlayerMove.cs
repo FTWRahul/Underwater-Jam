@@ -29,7 +29,7 @@ public class PlayerMove : MonoBehaviour
     GameObject dustParticles;
     CameraShake camShake;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
