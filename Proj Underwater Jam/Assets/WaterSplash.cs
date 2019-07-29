@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WaterSplash : MonoBehaviour
 {
@@ -23,7 +24,6 @@ public class WaterSplash : MonoBehaviour
 
     void LoadGame()
     {
-        Debug.Log("Load scene");
-        //load scene?
+        SceneManager.LoadScene(1);
     }
 }

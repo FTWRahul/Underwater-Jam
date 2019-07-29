@@ -62,6 +62,9 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         VictoryPanel.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
     }
     // public function for level complete
     public void LoadNextScene()
