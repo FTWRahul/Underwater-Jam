@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class AudioTriggerScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static List<AudioClip> randomThoughts;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public bool boat;
+    public bool plane;
 }
