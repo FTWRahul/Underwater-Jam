@@ -14,10 +14,7 @@ public class MenuButtonController : MonoBehaviour
 
     public List<GameObject> panels;
 
-    public GameObject mainMenu_pn;
-    public GameObject settings_pn;
-    public GameObject credits_pn;
-    public GameObject quit_pn;
+    public Animator animBackground;
 
     private void Start()
     {
@@ -88,7 +85,7 @@ public class MenuButtonController : MonoBehaviour
                     OpenSettings();
                     break;
                 case 1:
-                    LoadGame();
+                    animBackground.SetTrigger("Play");
                     break;
                 default:
                     break;
