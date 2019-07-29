@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Scene_Amanda.unity
+    guid: 685099a236f6198438a4cf1dd6af0f65
   m_configObjects: {}
