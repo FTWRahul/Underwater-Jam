@@ -53,6 +53,7 @@ MonoBehaviour:
   particleWidthFactor: 0
   particleSpeedFactor: 0
   colliderHeight: 20
+  colliderWidth: 2
   particles: {fileID: 0}
   airAudio: {fileID: 2920606252225601093}
 --- !u!65 &4335089242183133575
@@ -277,7 +278,7 @@ MonoBehaviour:
   plane: 0
   victory: 0
   geyserLines: 1
-  boatAudio: {fileID: 8300000, guid: d9cbd9b46a6d23643b17a2236c912e55, type: 3}
+  boatAudio: {fileID: 8300000, guid: f5b2b6b93588adc40b4ee860251a5b9f, type: 3}
   victoryAudio: {fileID: 8300000, guid: b269cd713526ffa4dbcf0588a177126f, type: 3}
-  planeAudio: {fileID: 8300000, guid: f5b2b6b93588adc40b4ee860251a5b9f, type: 3}
+  planeAudio: {fileID: 8300000, guid: d9cbd9b46a6d23643b17a2236c912e55, type: 3}
   player: {fileID: 0}

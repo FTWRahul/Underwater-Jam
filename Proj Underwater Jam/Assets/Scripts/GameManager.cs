@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(LoadNextLevel());
     }
 
-    // load the nextLevel after delay
+    // load the nextLevel after delayk
     IEnumerator LoadNextLevel()
     {
         yield return new WaitForSeconds(1.0f);

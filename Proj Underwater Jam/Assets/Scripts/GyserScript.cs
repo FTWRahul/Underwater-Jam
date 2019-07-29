@@ -18,7 +18,8 @@ public class GyserScript : MonoBehaviour
     float particleSpeedFactor;
     [SerializeField]
     float colliderHeight;
-
+    [SerializeField]
+    float colliderWidth;
     BoxCollider boxCollider;
 
     [SerializeField]
@@ -54,7 +55,7 @@ public class GyserScript : MonoBehaviour
         //main.gravityModifier. *= maxForce / 2f;
         //particles.startLifetime = colliderHeight
         boxCollider = GetComponent<BoxCollider>();
-        boxCollider.size = new Vector3(2, colliderHeight, 2);
+        boxCollider.size = new Vector3(colliderWidth, colliderHeight, 2);
         boxCollider.center = new Vector3(0, colliderHeight / 2, 0);
     }
 
