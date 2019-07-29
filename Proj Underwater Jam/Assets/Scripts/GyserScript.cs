@@ -27,6 +27,8 @@ public class GyserScript : MonoBehaviour
 
     CameraShake camShake;
 
+    public AudioSource airAudio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +59,12 @@ public class GyserScript : MonoBehaviour
         boxCollider.center = new Vector3(0, colliderHeight / 2, 0);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        airAudio.Play();
+        StartCoroutine(lerpAudio(0, 0.5f, false));
+    }
+
     private void OnTriggerStay(Collider other)
     {
         if (forceAdder < maxForce)
@@ -70,6 +78,7 @@ public class GyserScript : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         forceAdder = startForce;
+        StartCoroutine(lerpAudio(0.5f,0, true));
         other.GetComponent<ConstantForce>().force = Vector3.zero;
     }
 
@@ -86,5 +95,21 @@ public class GyserScript : MonoBehaviour
         //particleObj.SetActive(true);
         Debug.Log("Visiable");
 
+    }
+
+    public IEnumerator lerpAudio(float startValue, float endValue, bool shouldEnd)
+    {
+        //yield return null;
+        float t = 0;
+        while(t < 1)
+        {
+            t += Time.deltaTime;
+            airAudio.volume = Mathf.Lerp(startValue, endValue, t);
+            yield return new WaitForEndOfFrame();
+        }
+        if(shouldEnd)
+        {
+            airAudio.Stop();
+        }
     }
 }
