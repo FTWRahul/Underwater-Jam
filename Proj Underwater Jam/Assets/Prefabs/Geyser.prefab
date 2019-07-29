@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4335089242183133575}
   - component: {fileID: 8713291781521835803}
   - component: {fileID: 2920606252225601093}
+  - component: {fileID: 8576540046522536025}
   m_Layer: 0
   m_Name: Geyser
   m_TagString: Untagged
@@ -259,3 +260,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8576540046522536025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4335089242183133578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa44983f63e5a847b1850c3d9aee735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+  boat: 0
+  plane: 0
+  victory: 0
+  geyserLines: 1
+  boatAudio: {fileID: 8300000, guid: d9cbd9b46a6d23643b17a2236c912e55, type: 3}
+  victoryAudio: {fileID: 8300000, guid: b269cd713526ffa4dbcf0588a177126f, type: 3}
+  planeAudio: {fileID: 8300000, guid: f5b2b6b93588adc40b4ee860251a5b9f, type: 3}
+  player: {fileID: 0}

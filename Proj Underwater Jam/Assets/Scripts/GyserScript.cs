@@ -28,7 +28,6 @@ public class GyserScript : MonoBehaviour
     CameraShake camShake;
 
     public AudioSource airAudio;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -80,21 +79,6 @@ public class GyserScript : MonoBehaviour
         forceAdder = startForce;
         StartCoroutine(lerpAudio(0.5f,0, true));
         other.GetComponent<ConstantForce>().force = Vector3.zero;
-    }
-
-    private void OnBecameInvisible()
-    {
-        //enabled = false;
-       // particleObj.SetActive(false);
-        Debug.Log("Invisible");
-    }
-
-    private void OnBecameVisible()
-    {
-        //enabled = true;
-        //particleObj.SetActive(true);
-        Debug.Log("Visiable");
-
     }
 
     public IEnumerator lerpAudio(float startValue, float endValue, bool shouldEnd)

@@ -20,18 +20,20 @@ public class PlayerMove : MonoBehaviour
 
     [SerializeField]
     List<AudioClip> fallClips;
-    AudioSource audioSource;
+    public AudioSource audioSource;
+    public AudioSource thudSource;
     RaycastHit hit;
     [SerializeField]
     GameObject dustPoof;
     [SerializeField]
     GameObject dustParticles;
-
+    CameraShake camShake;
     // Start is called before the first frame update
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
+        camShake = FindObjectOfType<CameraShake>();
     }
 
     // Update is called once per frame
@@ -72,7 +74,7 @@ public class PlayerMove : MonoBehaviour
         //Debug.Log("LAST POSI" + lastPosi);
         //Debug.Log("NEW POSI"+newPosi);
         //Debug.Log(difference);
-        if (difference > 10)
+        if (difference > 20 && !AudioTriggerScript.isPlayingDialogue)
         {
             Debug.Log("Huge fall");
             if(fallCounter < fallClips.Count - 1)
@@ -89,6 +91,9 @@ public class PlayerMove : MonoBehaviour
 
         if (difference > 10)
         {
+            camShake.Trauma = .2f;
+            thudSource.pitch = Random.Range(0, 1);
+            thudSource.Play();
             GameObject dustPoofTMP = Instantiate(dustPoof, transform.position + Vector3.down, Quaternion.Euler(new Vector3(90,0,0)));
 
             GameObject dustParticleTMP = Instantiate(dustParticles, transform.position, Quaternion.identity);
