@@ -149,11 +149,6 @@ public class MenuButtonController : MonoBehaviour
         activeMenuIndex = 3;
     }
 
-    void LoadGame()
-    {
-        //load scene?
-    }
-
     public void CloseGame()
     {
         Application.Quit();
